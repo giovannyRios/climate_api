@@ -1,0 +1,9 @@
+Ha ocurrido un error en el metodo INSERT System.Data.Entity.Validation.DbEntityValidationException: Validation failed for one or more entities. See 'EntityValidationErrors' property for more details.
+   en System.Data.Entity.Internal.InternalContext.SaveChanges()
+   en System.Data.Entity.Internal.LazyInternalContext.SaveChanges()
+   en System.Data.Entity.DbContext.SaveChanges()
+   en climate_API.Classes.Module.tblWeatherForecastActions.INSERT(WeatherForecastInsert OBJ) en C:\Users\giova\Documents\CLIMATE_PROJECT\API\climate_API\Classes\Module\tblWeatherForecastActions.cs:línea 104Ha ocurrido un error en el metodo INSERT System.Data.Entity.Validation.DbEntityValidationException: Validation failed for one or more entities. See 'EntityValidationErrors' property for more details.
+   en System.Data.Entity.Internal.InternalContext.SaveChanges()
+   en System.Data.Entity.Internal.LazyInternalContext.SaveChanges()
+   en System.Data.Entity.DbContext.SaveChanges()
+   en climate_API.Classes.Module.tblWeatherForecastActions.INSERT(WeatherForecastInsert OBJ) en C:\Users\giova\Documents\CLIMATE_PROJECT\API\climate_API\Classes\Module\tblWeatherForecastActions.cs:línea 104

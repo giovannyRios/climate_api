@@ -1,0 +1,80 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
+  <EntityContainerMapping StorageEntityContainer="climateModelStoreContainer" CdmEntityContainer="climateEntities">
+    <EntitySetMapping Name="tblAlert">
+      <EntityTypeMapping TypeName="climateModel.tblAlert">
+        <MappingFragment StoreEntitySet="tblAlert">
+          <ScalarProperty Name="ID" ColumnName="ID" />
+          <ScalarProperty Name="NameAlert" ColumnName="NameAlert" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="tblClimaticPhenomenon">
+      <EntityTypeMapping TypeName="climateModel.tblClimaticPhenomenon">
+        <MappingFragment StoreEntitySet="tblClimaticPhenomenon">
+          <ScalarProperty Name="ID" ColumnName="ID" />
+          <ScalarProperty Name="DescriptionClimaticPhenomenon" ColumnName="DescriptionClimaticPhenomenon" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="tblCountry">
+      <EntityTypeMapping TypeName="climateModel.tblCountry">
+        <MappingFragment StoreEntitySet="tblCountry">
+          <ScalarProperty Name="ID" ColumnName="ID" />
+          <ScalarProperty Name="NameCountry" ColumnName="NameCountry" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="tblTerritory">
+      <EntityTypeMapping TypeName="climateModel.tblTerritory">
+        <MappingFragment StoreEntitySet="tblTerritory">
+          <ScalarProperty Name="ID" ColumnName="ID" />
+          <ScalarProperty Name="NameTerritory" ColumnName="NameTerritory" />
+          <ScalarProperty Name="Id_Country" ColumnName="Id_Country" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="tblTypeTemperature">
+      <EntityTypeMapping TypeName="climateModel.tblTypeTemperature">
+        <MappingFragment StoreEntitySet="tblTypeTemperature">
+          <ScalarProperty Name="ID" ColumnName="ID" />
+          <ScalarProperty Name="NameTypeTemp" ColumnName="NameTypeTemp" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="tblUsers">
+      <EntityTypeMapping TypeName="climateModel.tblUsers">
+        <MappingFragment StoreEntitySet="tblUsers">
+          <ScalarProperty Name="ID" ColumnName="ID" />
+          <ScalarProperty Name="userName" ColumnName="userName" />
+          <ScalarProperty Name="userPassword" ColumnName="userPassword" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="tblWeatherForecast">
+      <EntityTypeMapping TypeName="climateModel.tblWeatherForecast">
+        <MappingFragment StoreEntitySet="tblWeatherForecast">
+          <ScalarProperty Name="StateRegister" ColumnName="StateRegister" />
+          <ScalarProperty Name="ID" ColumnName="ID" />
+          <ScalarProperty Name="ClimaticDescription" ColumnName="ClimaticDescription" />
+          <ScalarProperty Name="DateRegister" ColumnName="DateRegister" />
+          <ScalarProperty Name="Temperature" ColumnName="Temperature" />
+          <ScalarProperty Name="IdTypeTemperature" ColumnName="IdTypeTemperature" />
+          <ScalarProperty Name="IdClimaticPhenomenon" ColumnName="IdClimaticPhenomenon" />
+          <ScalarProperty Name="IdAlert" ColumnName="IdAlert" />
+          <ScalarProperty Name="IdWeatherStation" ColumnName="IdWeatherStation" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="tblWeatherStation">
+      <EntityTypeMapping TypeName="climateModel.tblWeatherStation">
+        <MappingFragment StoreEntitySet="tblWeatherStation">
+          <ScalarProperty Name="ID" ColumnName="ID" />
+          <ScalarProperty Name="NumStation" ColumnName="NumStation" />
+          <ScalarProperty Name="NameStation" ColumnName="NameStation" />
+          <ScalarProperty Name="Id_Territory" ColumnName="Id_Territory" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+  </EntityContainerMapping>
+</Mapping>

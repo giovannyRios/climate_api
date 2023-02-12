@@ -1,0 +1,452 @@
+Ha ocurrido un error en el metodo GET AutoMapper.AutoMapperMappingException: Missing type map configuration or unsupported mapping.
+
+Mapping types:
+DbQuery`1 -> tblAlertDTO
+System.Data.Entity.Infrastructure.DbQuery`1[[climate_API.Models.entityFramework.tblAlert, climate_API, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]] -> climate_API.Models.DTO.tblAlertDTO
+   en lambda_method(Closure , DbQuery`1 , tblAlertDTO , ResolutionContext )
+   en lambda_method(Closure , Object , Object , ResolutionContext )
+   en AutoMapper.Mapper.AutoMapper.IMapper.Map[TDestination](Object source) en C:\projects\automapper\src\AutoMapper\Mapper.cs:línea 212
+   en AutoMapper.Mapper.Map[TDestination](Object source) en C:\projects\automapper\src\AutoMapper\Mapper.cs:línea 77
+   en climate_API.Classes.Module.tblAlertActions.GET(Int32 ID) en C:\Users\giova\Documents\CLIMATE_PROJECT\API\climate_API\Classes\Module\tblAlertActions.cs:línea 21Ha ocurrido un error en el metodo GetAllAlertAutoMapper.AutoMapperMappingException: Missing type map configuration or unsupported mapping.
+
+Mapping types:
+DbQuery`1 -> tblAlertDTO
+System.Data.Entity.Infrastructure.DbQuery`1[[climate_API.Models.entityFramework.tblAlert, climate_API, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]] -> climate_API.Models.DTO.tblAlertDTO
+   en climate_API.Classes.Module.tblAlertActions.GET(Int32 ID) en C:\Users\giova\Documents\CLIMATE_PROJECT\API\climate_API\Classes\Module\tblAlertActions.cs:línea 27
+   en climate_API.Controllers.valoresDefaultController.GetAlert(Int32 ID) en C:\Users\giova\Documents\CLIMATE_PROJECT\API\climate_API\Controllers\valoresDefaultController.cs:línea 66
+Ha ocurrido un error en el metodo GET AutoMapper.AutoMapperMappingException: Missing type map configuration or unsupported mapping.
+
+Mapping types:
+DbQuery`1 -> tblTypeTemperatureDTO
+System.Data.Entity.Infrastructure.DbQuery`1[[climate_API.Models.entityFramework.tblTypeTemperature, climate_API, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]] -> climate_API.Models.DTO.tblTypeTemperatureDTO
+   en lambda_method(Closure , DbQuery`1 , tblTypeTemperatureDTO , ResolutionContext )
+   en lambda_method(Closure , Object , Object , ResolutionContext )
+   en AutoMapper.Mapper.AutoMapper.IMapper.Map[TDestination](Object source) en C:\projects\automapper\src\AutoMapper\Mapper.cs:línea 212
+   en AutoMapper.Mapper.Map[TDestination](Object source) en C:\projects\automapper\src\AutoMapper\Mapper.cs:línea 77
+   en climate_API.Classes.Module.tblTypeTemperatureActions.GET(Int32 ID) en C:\Users\giova\Documents\CLIMATE_PROJECT\API\climate_API\Classes\Module\tblTypeTemperatureActions.cs:línea 21
+Ha ocurrido un error en el metodo GetTypeTemperatureAutoMapper.AutoMapperMappingException: Missing type map configuration or unsupported mapping.
+
+Mapping types:
+DbQuery`1 -> tblTypeTemperatureDTO
+System.Data.Entity.Infrastructure.DbQuery`1[[climate_API.Models.entityFramework.tblTypeTemperature, climate_API, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]] -> climate_API.Models.DTO.tblTypeTemperatureDTO
+   en climate_API.Classes.Module.tblTypeTemperatureActions.GET(Int32 ID) en C:\Users\giova\Documents\CLIMATE_PROJECT\API\climate_API\Classes\Module\tblTypeTemperatureActions.cs:línea 27
+   en climate_API.Controllers.valoresDefaultController.GetTypeTemperature(Int32 ID) en C:\Users\giova\Documents\CLIMATE_PROJECT\API\climate_API\Controllers\valoresDefaultController.cs:línea 335
+Ha ocurrido un error en el metodo GET AutoMapper.AutoMapperMappingException: Missing type map configuration or unsupported mapping.
+
+Mapping types:
+DbQuery`1 -> tblClimaticPhenomenonDTO
+System.Data.Entity.Infrastructure.DbQuery`1[[climate_API.Models.entityFramework.tblClimaticPhenomenon, climate_API, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]] -> climate_API.Models.DTO.tblClimaticPhenomenonDTO
+   en lambda_method(Closure , DbQuery`1 , tblClimaticPhenomenonDTO , ResolutionContext )
+   en lambda_method(Closure , Object , Object , ResolutionContext )
+   en AutoMapper.Mapper.AutoMapper.IMapper.Map[TDestination](Object source) en C:\projects\automapper\src\AutoMapper\Mapper.cs:línea 212
+   en AutoMapper.Mapper.Map[TDestination](Object source) en C:\projects\automapper\src\AutoMapper\Mapper.cs:línea 77
+   en climate_API.Classes.Module.tblClimaticPhenomenonActions.GET(Int32 ID) en C:\Users\giova\Documents\CLIMATE_PROJECT\API\climate_API\Classes\Module\tblClimaticPhenomenonActions.cs:línea 22
+Ha ocurrido un error en el metodo GetClimaticPhenomenonAutoMapper.AutoMapperMappingException: Missing type map configuration or unsupported mapping.
+
+Mapping types:
+DbQuery`1 -> tblClimaticPhenomenonDTO
+System.Data.Entity.Infrastructure.DbQuery`1[[climate_API.Models.entityFramework.tblClimaticPhenomenon, climate_API, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]] -> climate_API.Models.DTO.tblClimaticPhenomenonDTO
+   en climate_API.Classes.Module.tblClimaticPhenomenonActions.GET(Int32 ID) en C:\Users\giova\Documents\CLIMATE_PROJECT\API\climate_API\Classes\Module\tblClimaticPhenomenonActions.cs:línea 28
+   en climate_API.Controllers.valoresDefaultController.GetClimaticPhenomenon(Int32 ID) en C:\Users\giova\Documents\CLIMATE_PROJECT\API\climate_API\Controllers\valoresDefaultController.cs:línea 133
+Ha ocurrido un error en el metodo GET AutoMapper.AutoMapperMappingException: Missing type map configuration or unsupported mapping.
+
+Mapping types:
+DbQuery`1 -> tblWeatherStationDTO
+System.Data.Entity.Infrastructure.DbQuery`1[[climate_API.Models.entityFramework.tblWeatherStation, climate_API, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]] -> climate_API.Models.DTO.tblWeatherStationDTO
+   en lambda_method(Closure , DbQuery`1 , tblWeatherStationDTO , ResolutionContext )
+   en lambda_method(Closure , Object , Object , ResolutionContext )
+   en AutoMapper.Mapper.AutoMapper.IMapper.Map[TDestination](Object source) en C:\projects\automapper\src\AutoMapper\Mapper.cs:línea 212
+   en AutoMapper.Mapper.Map[TDestination](Object source) en C:\projects\automapper\src\AutoMapper\Mapper.cs:línea 77
+   en climate_API.Classes.Module.tblWeatherStationActions.GET(Int32 ID) en C:\Users\giova\Documents\CLIMATE_PROJECT\API\climate_API\Classes\Module\tblWeatherStationActions.cs:línea 21
+Ha ocurrido un error en el metodo GetWeatherStationAutoMapper.AutoMapperMappingException: Missing type map configuration or unsupported mapping.
+
+Mapping types:
+DbQuery`1 -> tblWeatherStationDTO
+System.Data.Entity.Infrastructure.DbQuery`1[[climate_API.Models.entityFramework.tblWeatherStation, climate_API, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]] -> climate_API.Models.DTO.tblWeatherStationDTO
+   en climate_API.Classes.Module.tblWeatherStationActions.GET(Int32 ID) en C:\Users\giova\Documents\CLIMATE_PROJECT\API\climate_API\Classes\Module\tblWeatherStationActions.cs:línea 27
+   en climate_API.Controllers.valoresDefaultController.GetWeatherStation(Int32 ID) en C:\Users\giova\Documents\CLIMATE_PROJECT\API\climate_API\Controllers\valoresDefaultController.cs:línea 402
+Ha ocurrido un error en el metodo GET AutoMapper.AutoMapperMappingException: Missing type map configuration or unsupported mapping.
+
+Mapping types:
+DbQuery`1 -> tblAlertDTO
+System.Data.Entity.Infrastructure.DbQuery`1[[climate_API.Models.entityFramework.tblAlert, climate_API, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]] -> climate_API.Models.DTO.tblAlertDTO
+   en lambda_method(Closure , DbQuery`1 , tblAlertDTO , ResolutionContext )
+   en lambda_method(Closure , Object , Object , ResolutionContext )
+   en AutoMapper.Mapper.AutoMapper.IMapper.Map[TDestination](Object source) en C:\projects\automapper\src\AutoMapper\Mapper.cs:línea 212
+   en AutoMapper.Mapper.Map[TDestination](Object source) en C:\projects\automapper\src\AutoMapper\Mapper.cs:línea 77
+   en climate_API.Classes.Module.tblAlertActions.GET(Int32 ID) en C:\Users\giova\Documents\CLIMATE_PROJECT\API\climate_API\Classes\Module\tblAlertActions.cs:línea 21
+Ha ocurrido un error en el metodo GetAllAlertAutoMapper.AutoMapperMappingException: Missing type map configuration or unsupported mapping.
+
+Mapping types:
+DbQuery`1 -> tblAlertDTO
+System.Data.Entity.Infrastructure.DbQuery`1[[climate_API.Models.entityFramework.tblAlert, climate_API, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]] -> climate_API.Models.DTO.tblAlertDTO
+   en climate_API.Classes.Module.tblAlertActions.GET(Int32 ID) en C:\Users\giova\Documents\CLIMATE_PROJECT\API\climate_API\Classes\Module\tblAlertActions.cs:línea 27
+   en climate_API.Controllers.valoresDefaultController.GetAlert(Int32 ID) en C:\Users\giova\Documents\CLIMATE_PROJECT\API\climate_API\Controllers\valoresDefaultController.cs:línea 66
+Ha ocurrido un error en el metodo GET AutoMapper.AutoMapperMappingException: Missing type map configuration or unsupported mapping.
+
+Mapping types:
+DbQuery`1 -> tblTypeTemperatureDTO
+System.Data.Entity.Infrastructure.DbQuery`1[[climate_API.Models.entityFramework.tblTypeTemperature, climate_API, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]] -> climate_API.Models.DTO.tblTypeTemperatureDTO
+   en lambda_method(Closure , DbQuery`1 , tblTypeTemperatureDTO , ResolutionContext )
+   en lambda_method(Closure , Object , Object , ResolutionContext )
+   en AutoMapper.Mapper.AutoMapper.IMapper.Map[TDestination](Object source) en C:\projects\automapper\src\AutoMapper\Mapper.cs:línea 212
+   en AutoMapper.Mapper.Map[TDestination](Object source) en C:\projects\automapper\src\AutoMapper\Mapper.cs:línea 77
+   en climate_API.Classes.Module.tblTypeTemperatureActions.GET(Int32 ID) en C:\Users\giova\Documents\CLIMATE_PROJECT\API\climate_API\Classes\Module\tblTypeTemperatureActions.cs:línea 21
+Ha ocurrido un error en el metodo GetTypeTemperatureAutoMapper.AutoMapperMappingException: Missing type map configuration or unsupported mapping.
+
+Mapping types:
+DbQuery`1 -> tblTypeTemperatureDTO
+System.Data.Entity.Infrastructure.DbQuery`1[[climate_API.Models.entityFramework.tblTypeTemperature, climate_API, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]] -> climate_API.Models.DTO.tblTypeTemperatureDTO
+   en climate_API.Classes.Module.tblTypeTemperatureActions.GET(Int32 ID) en C:\Users\giova\Documents\CLIMATE_PROJECT\API\climate_API\Classes\Module\tblTypeTemperatureActions.cs:línea 27
+   en climate_API.Controllers.valoresDefaultController.GetTypeTemperature(Int32 ID) en C:\Users\giova\Documents\CLIMATE_PROJECT\API\climate_API\Controllers\valoresDefaultController.cs:línea 335
+Ha ocurrido un error en el metodo GET AutoMapper.AutoMapperMappingException: Missing type map configuration or unsupported mapping.
+
+Mapping types:
+DbQuery`1 -> tblClimaticPhenomenonDTO
+System.Data.Entity.Infrastructure.DbQuery`1[[climate_API.Models.entityFramework.tblClimaticPhenomenon, climate_API, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]] -> climate_API.Models.DTO.tblClimaticPhenomenonDTO
+   en lambda_method(Closure , DbQuery`1 , tblClimaticPhenomenonDTO , ResolutionContext )
+   en lambda_method(Closure , Object , Object , ResolutionContext )
+   en AutoMapper.Mapper.AutoMapper.IMapper.Map[TDestination](Object source) en C:\projects\automapper\src\AutoMapper\Mapper.cs:línea 212
+   en AutoMapper.Mapper.Map[TDestination](Object source) en C:\projects\automapper\src\AutoMapper\Mapper.cs:línea 77
+   en climate_API.Classes.Module.tblClimaticPhenomenonActions.GET(Int32 ID) en C:\Users\giova\Documents\CLIMATE_PROJECT\API\climate_API\Classes\Module\tblClimaticPhenomenonActions.cs:línea 22
+Ha ocurrido un error en el metodo GetClimaticPhenomenonAutoMapper.AutoMapperMappingException: Missing type map configuration or unsupported mapping.
+
+Mapping types:
+DbQuery`1 -> tblClimaticPhenomenonDTO
+System.Data.Entity.Infrastructure.DbQuery`1[[climate_API.Models.entityFramework.tblClimaticPhenomenon, climate_API, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]] -> climate_API.Models.DTO.tblClimaticPhenomenonDTO
+   en climate_API.Classes.Module.tblClimaticPhenomenonActions.GET(Int32 ID) en C:\Users\giova\Documents\CLIMATE_PROJECT\API\climate_API\Classes\Module\tblClimaticPhenomenonActions.cs:línea 28
+   en climate_API.Controllers.valoresDefaultController.GetClimaticPhenomenon(Int32 ID) en C:\Users\giova\Documents\CLIMATE_PROJECT\API\climate_API\Controllers\valoresDefaultController.cs:línea 133
+Ha ocurrido un error en el metodo GET AutoMapper.AutoMapperMappingException: Missing type map configuration or unsupported mapping.
+
+Mapping types:
+DbQuery`1 -> tblWeatherStationDTO
+System.Data.Entity.Infrastructure.DbQuery`1[[climate_API.Models.entityFramework.tblWeatherStation, climate_API, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]] -> climate_API.Models.DTO.tblWeatherStationDTO
+   en lambda_method(Closure , DbQuery`1 , tblWeatherStationDTO , ResolutionContext )
+   en lambda_method(Closure , Object , Object , ResolutionContext )
+   en AutoMapper.Mapper.AutoMapper.IMapper.Map[TDestination](Object source) en C:\projects\automapper\src\AutoMapper\Mapper.cs:línea 212
+   en AutoMapper.Mapper.Map[TDestination](Object source) en C:\projects\automapper\src\AutoMapper\Mapper.cs:línea 77
+   en climate_API.Classes.Module.tblWeatherStationActions.GET(Int32 ID) en C:\Users\giova\Documents\CLIMATE_PROJECT\API\climate_API\Classes\Module\tblWeatherStationActions.cs:línea 21
+Ha ocurrido un error en el metodo GetWeatherStationAutoMapper.AutoMapperMappingException: Missing type map configuration or unsupported mapping.
+
+Mapping types:
+DbQuery`1 -> tblWeatherStationDTO
+System.Data.Entity.Infrastructure.DbQuery`1[[climate_API.Models.entityFramework.tblWeatherStation, climate_API, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]] -> climate_API.Models.DTO.tblWeatherStationDTO
+   en climate_API.Classes.Module.tblWeatherStationActions.GET(Int32 ID) en C:\Users\giova\Documents\CLIMATE_PROJECT\API\climate_API\Classes\Module\tblWeatherStationActions.cs:línea 27
+   en climate_API.Controllers.valoresDefaultController.GetWeatherStation(Int32 ID) en C:\Users\giova\Documents\CLIMATE_PROJECT\API\climate_API\Controllers\valoresDefaultController.cs:línea 402
+Ha ocurrido un error en el metodo GET AutoMapper.AutoMapperMappingException: Missing type map configuration or unsupported mapping.
+
+Mapping types:
+DbQuery`1 -> tblAlertDTO
+System.Data.Entity.Infrastructure.DbQuery`1[[climate_API.Models.entityFramework.tblAlert, climate_API, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]] -> climate_API.Models.DTO.tblAlertDTO
+   en lambda_method(Closure , DbQuery`1 , tblAlertDTO , ResolutionContext )
+   en lambda_method(Closure , Object , Object , ResolutionContext )
+   en AutoMapper.Mapper.AutoMapper.IMapper.Map[TDestination](Object source) en C:\projects\automapper\src\AutoMapper\Mapper.cs:línea 212
+   en AutoMapper.Mapper.Map[TDestination](Object source) en C:\projects\automapper\src\AutoMapper\Mapper.cs:línea 77
+   en climate_API.Classes.Module.tblAlertActions.GET(Int32 ID) en C:\Users\giova\Documents\CLIMATE_PROJECT\API\climate_API\Classes\Module\tblAlertActions.cs:línea 21
+Ha ocurrido un error en el metodo GetAllAlertAutoMapper.AutoMapperMappingException: Missing type map configuration or unsupported mapping.
+
+Mapping types:
+DbQuery`1 -> tblAlertDTO
+System.Data.Entity.Infrastructure.DbQuery`1[[climate_API.Models.entityFramework.tblAlert, climate_API, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]] -> climate_API.Models.DTO.tblAlertDTO
+   en climate_API.Classes.Module.tblAlertActions.GET(Int32 ID) en C:\Users\giova\Documents\CLIMATE_PROJECT\API\climate_API\Classes\Module\tblAlertActions.cs:línea 27
+   en climate_API.Controllers.valoresDefaultController.GetAlert(Int32 ID) en C:\Users\giova\Documents\CLIMATE_PROJECT\API\climate_API\Controllers\valoresDefaultController.cs:línea 66
+Ha ocurrido un error en el metodo GET AutoMapper.AutoMapperMappingException: Missing type map configuration or unsupported mapping.
+
+Mapping types:
+DbQuery`1 -> tblTypeTemperatureDTO
+System.Data.Entity.Infrastructure.DbQuery`1[[climate_API.Models.entityFramework.tblTypeTemperature, climate_API, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]] -> climate_API.Models.DTO.tblTypeTemperatureDTO
+   en lambda_method(Closure , DbQuery`1 , tblTypeTemperatureDTO , ResolutionContext )
+   en lambda_method(Closure , Object , Object , ResolutionContext )
+   en AutoMapper.Mapper.AutoMapper.IMapper.Map[TDestination](Object source) en C:\projects\automapper\src\AutoMapper\Mapper.cs:línea 212
+   en AutoMapper.Mapper.Map[TDestination](Object source) en C:\projects\automapper\src\AutoMapper\Mapper.cs:línea 77
+   en climate_API.Classes.Module.tblTypeTemperatureActions.GET(Int32 ID) en C:\Users\giova\Documents\CLIMATE_PROJECT\API\climate_API\Classes\Module\tblTypeTemperatureActions.cs:línea 21
+Ha ocurrido un error en el metodo GetTypeTemperatureAutoMapper.AutoMapperMappingException: Missing type map configuration or unsupported mapping.
+
+Mapping types:
+DbQuery`1 -> tblTypeTemperatureDTO
+System.Data.Entity.Infrastructure.DbQuery`1[[climate_API.Models.entityFramework.tblTypeTemperature, climate_API, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]] -> climate_API.Models.DTO.tblTypeTemperatureDTO
+   en climate_API.Classes.Module.tblTypeTemperatureActions.GET(Int32 ID) en C:\Users\giova\Documents\CLIMATE_PROJECT\API\climate_API\Classes\Module\tblTypeTemperatureActions.cs:línea 27
+   en climate_API.Controllers.valoresDefaultController.GetTypeTemperature(Int32 ID) en C:\Users\giova\Documents\CLIMATE_PROJECT\API\climate_API\Controllers\valoresDefaultController.cs:línea 335
+Ha ocurrido un error en el metodo GET AutoMapper.AutoMapperMappingException: Missing type map configuration or unsupported mapping.
+
+Mapping types:
+DbQuery`1 -> tblClimaticPhenomenonDTO
+System.Data.Entity.Infrastructure.DbQuery`1[[climate_API.Models.entityFramework.tblClimaticPhenomenon, climate_API, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]] -> climate_API.Models.DTO.tblClimaticPhenomenonDTO
+   en lambda_method(Closure , DbQuery`1 , tblClimaticPhenomenonDTO , ResolutionContext )
+   en lambda_method(Closure , Object , Object , ResolutionContext )
+   en AutoMapper.Mapper.AutoMapper.IMapper.Map[TDestination](Object source) en C:\projects\automapper\src\AutoMapper\Mapper.cs:línea 212
+   en AutoMapper.Mapper.Map[TDestination](Object source) en C:\projects\automapper\src\AutoMapper\Mapper.cs:línea 77
+   en climate_API.Classes.Module.tblClimaticPhenomenonActions.GET(Int32 ID) en C:\Users\giova\Documents\CLIMATE_PROJECT\API\climate_API\Classes\Module\tblClimaticPhenomenonActions.cs:línea 22
+Ha ocurrido un error en el metodo GetClimaticPhenomenonAutoMapper.AutoMapperMappingException: Missing type map configuration or unsupported mapping.
+
+Mapping types:
+DbQuery`1 -> tblClimaticPhenomenonDTO
+System.Data.Entity.Infrastructure.DbQuery`1[[climate_API.Models.entityFramework.tblClimaticPhenomenon, climate_API, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]] -> climate_API.Models.DTO.tblClimaticPhenomenonDTO
+   en climate_API.Classes.Module.tblClimaticPhenomenonActions.GET(Int32 ID) en C:\Users\giova\Documents\CLIMATE_PROJECT\API\climate_API\Classes\Module\tblClimaticPhenomenonActions.cs:línea 28
+   en climate_API.Controllers.valoresDefaultController.GetClimaticPhenomenon(Int32 ID) en C:\Users\giova\Documents\CLIMATE_PROJECT\API\climate_API\Controllers\valoresDefaultController.cs:línea 133
+Ha ocurrido un error en el metodo GET AutoMapper.AutoMapperMappingException: Missing type map configuration or unsupported mapping.
+
+Mapping types:
+DbQuery`1 -> tblWeatherStationDTO
+System.Data.Entity.Infrastructure.DbQuery`1[[climate_API.Models.entityFramework.tblWeatherStation, climate_API, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]] -> climate_API.Models.DTO.tblWeatherStationDTO
+   en lambda_method(Closure , DbQuery`1 , tblWeatherStationDTO , ResolutionContext )
+   en lambda_method(Closure , Object , Object , ResolutionContext )
+   en AutoMapper.Mapper.AutoMapper.IMapper.Map[TDestination](Object source) en C:\projects\automapper\src\AutoMapper\Mapper.cs:línea 212
+   en AutoMapper.Mapper.Map[TDestination](Object source) en C:\projects\automapper\src\AutoMapper\Mapper.cs:línea 77
+   en climate_API.Classes.Module.tblWeatherStationActions.GET(Int32 ID) en C:\Users\giova\Documents\CLIMATE_PROJECT\API\climate_API\Classes\Module\tblWeatherStationActions.cs:línea 21
+Ha ocurrido un error en el metodo GetWeatherStationAutoMapper.AutoMapperMappingException: Missing type map configuration or unsupported mapping.
+
+Mapping types:
+DbQuery`1 -> tblWeatherStationDTO
+System.Data.Entity.Infrastructure.DbQuery`1[[climate_API.Models.entityFramework.tblWeatherStation, climate_API, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]] -> climate_API.Models.DTO.tblWeatherStationDTO
+   en climate_API.Classes.Module.tblWeatherStationActions.GET(Int32 ID) en C:\Users\giova\Documents\CLIMATE_PROJECT\API\climate_API\Classes\Module\tblWeatherStationActions.cs:línea 27
+   en climate_API.Controllers.valoresDefaultController.GetWeatherStation(Int32 ID) en C:\Users\giova\Documents\CLIMATE_PROJECT\API\climate_API\Controllers\valoresDefaultController.cs:línea 402
+Ha ocurrido un error en el metodo GET AutoMapper.AutoMapperMappingException: Missing type map configuration or unsupported mapping.
+
+Mapping types:
+DbQuery`1 -> tblAlertDTO
+System.Data.Entity.Infrastructure.DbQuery`1[[climate_API.Models.entityFramework.tblAlert, climate_API, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]] -> climate_API.Models.DTO.tblAlertDTO
+   en lambda_method(Closure , DbQuery`1 , tblAlertDTO , ResolutionContext )
+   en lambda_method(Closure , Object , Object , ResolutionContext )
+   en AutoMapper.Mapper.AutoMapper.IMapper.Map[TDestination](Object source) en C:\projects\automapper\src\AutoMapper\Mapper.cs:línea 212
+   en AutoMapper.Mapper.Map[TDestination](Object source) en C:\projects\automapper\src\AutoMapper\Mapper.cs:línea 77
+   en climate_API.Classes.Module.tblAlertActions.GET(Int32 ID) en C:\Users\giova\Documents\CLIMATE_PROJECT\API\climate_API\Classes\Module\tblAlertActions.cs:línea 21
+Ha ocurrido un error en el metodo GetAllAlertAutoMapper.AutoMapperMappingException: Missing type map configuration or unsupported mapping.
+
+Mapping types:
+DbQuery`1 -> tblAlertDTO
+System.Data.Entity.Infrastructure.DbQuery`1[[climate_API.Models.entityFramework.tblAlert, climate_API, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]] -> climate_API.Models.DTO.tblAlertDTO
+   en climate_API.Classes.Module.tblAlertActions.GET(Int32 ID) en C:\Users\giova\Documents\CLIMATE_PROJECT\API\climate_API\Classes\Module\tblAlertActions.cs:línea 27
+   en climate_API.Controllers.valoresDefaultController.GetAlert(Int32 ID) en C:\Users\giova\Documents\CLIMATE_PROJECT\API\climate_API\Controllers\valoresDefaultController.cs:línea 66
+Ha ocurrido un error en el metodo GET AutoMapper.AutoMapperMappingException: Missing type map configuration or unsupported mapping.
+
+Mapping types:
+DbQuery`1 -> tblTypeTemperatureDTO
+System.Data.Entity.Infrastructure.DbQuery`1[[climate_API.Models.entityFramework.tblTypeTemperature, climate_API, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]] -> climate_API.Models.DTO.tblTypeTemperatureDTO
+   en lambda_method(Closure , DbQuery`1 , tblTypeTemperatureDTO , ResolutionContext )
+   en lambda_method(Closure , Object , Object , ResolutionContext )
+   en AutoMapper.Mapper.AutoMapper.IMapper.Map[TDestination](Object source) en C:\projects\automapper\src\AutoMapper\Mapper.cs:línea 212
+   en AutoMapper.Mapper.Map[TDestination](Object source) en C:\projects\automapper\src\AutoMapper\Mapper.cs:línea 77
+   en climate_API.Classes.Module.tblTypeTemperatureActions.GET(Int32 ID) en C:\Users\giova\Documents\CLIMATE_PROJECT\API\climate_API\Classes\Module\tblTypeTemperatureActions.cs:línea 21
+Ha ocurrido un error en el metodo GetTypeTemperatureAutoMapper.AutoMapperMappingException: Missing type map configuration or unsupported mapping.
+
+Mapping types:
+DbQuery`1 -> tblTypeTemperatureDTO
+System.Data.Entity.Infrastructure.DbQuery`1[[climate_API.Models.entityFramework.tblTypeTemperature, climate_API, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]] -> climate_API.Models.DTO.tblTypeTemperatureDTO
+   en climate_API.Classes.Module.tblTypeTemperatureActions.GET(Int32 ID) en C:\Users\giova\Documents\CLIMATE_PROJECT\API\climate_API\Classes\Module\tblTypeTemperatureActions.cs:línea 27
+   en climate_API.Controllers.valoresDefaultController.GetTypeTemperature(Int32 ID) en C:\Users\giova\Documents\CLIMATE_PROJECT\API\climate_API\Controllers\valoresDefaultController.cs:línea 335
+Ha ocurrido un error en el metodo GET AutoMapper.AutoMapperMappingException: Missing type map configuration or unsupported mapping.
+
+Mapping types:
+DbQuery`1 -> tblClimaticPhenomenonDTO
+System.Data.Entity.Infrastructure.DbQuery`1[[climate_API.Models.entityFramework.tblClimaticPhenomenon, climate_API, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]] -> climate_API.Models.DTO.tblClimaticPhenomenonDTO
+   en lambda_method(Closure , DbQuery`1 , tblClimaticPhenomenonDTO , ResolutionContext )
+   en lambda_method(Closure , Object , Object , ResolutionContext )
+   en AutoMapper.Mapper.AutoMapper.IMapper.Map[TDestination](Object source) en C:\projects\automapper\src\AutoMapper\Mapper.cs:línea 212
+   en AutoMapper.Mapper.Map[TDestination](Object source) en C:\projects\automapper\src\AutoMapper\Mapper.cs:línea 77
+   en climate_API.Classes.Module.tblClimaticPhenomenonActions.GET(Int32 ID) en C:\Users\giova\Documents\CLIMATE_PROJECT\API\climate_API\Classes\Module\tblClimaticPhenomenonActions.cs:línea 22
+Ha ocurrido un error en el metodo GetClimaticPhenomenonAutoMapper.AutoMapperMappingException: Missing type map configuration or unsupported mapping.
+
+Mapping types:
+DbQuery`1 -> tblClimaticPhenomenonDTO
+System.Data.Entity.Infrastructure.DbQuery`1[[climate_API.Models.entityFramework.tblClimaticPhenomenon, climate_API, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]] -> climate_API.Models.DTO.tblClimaticPhenomenonDTO
+   en climate_API.Classes.Module.tblClimaticPhenomenonActions.GET(Int32 ID) en C:\Users\giova\Documents\CLIMATE_PROJECT\API\climate_API\Classes\Module\tblClimaticPhenomenonActions.cs:línea 28
+   en climate_API.Controllers.valoresDefaultController.GetClimaticPhenomenon(Int32 ID) en C:\Users\giova\Documents\CLIMATE_PROJECT\API\climate_API\Controllers\valoresDefaultController.cs:línea 133
+Ha ocurrido un error en el metodo GET AutoMapper.AutoMapperMappingException: Missing type map configuration or unsupported mapping.
+
+Mapping types:
+DbQuery`1 -> tblWeatherStationDTO
+System.Data.Entity.Infrastructure.DbQuery`1[[climate_API.Models.entityFramework.tblWeatherStation, climate_API, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]] -> climate_API.Models.DTO.tblWeatherStationDTO
+   en lambda_method(Closure , DbQuery`1 , tblWeatherStationDTO , ResolutionContext )
+   en lambda_method(Closure , Object , Object , ResolutionContext )
+   en AutoMapper.Mapper.AutoMapper.IMapper.Map[TDestination](Object source) en C:\projects\automapper\src\AutoMapper\Mapper.cs:línea 212
+   en AutoMapper.Mapper.Map[TDestination](Object source) en C:\projects\automapper\src\AutoMapper\Mapper.cs:línea 77
+   en climate_API.Classes.Module.tblWeatherStationActions.GET(Int32 ID) en C:\Users\giova\Documents\CLIMATE_PROJECT\API\climate_API\Classes\Module\tblWeatherStationActions.cs:línea 21
+Ha ocurrido un error en el metodo GetWeatherStationAutoMapper.AutoMapperMappingException: Missing type map configuration or unsupported mapping.
+
+Mapping types:
+DbQuery`1 -> tblWeatherStationDTO
+System.Data.Entity.Infrastructure.DbQuery`1[[climate_API.Models.entityFramework.tblWeatherStation, climate_API, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]] -> climate_API.Models.DTO.tblWeatherStationDTO
+   en climate_API.Classes.Module.tblWeatherStationActions.GET(Int32 ID) en C:\Users\giova\Documents\CLIMATE_PROJECT\API\climate_API\Classes\Module\tblWeatherStationActions.cs:línea 27
+   en climate_API.Controllers.valoresDefaultController.GetWeatherStation(Int32 ID) en C:\Users\giova\Documents\CLIMATE_PROJECT\API\climate_API\Controllers\valoresDefaultController.cs:línea 402
+Ha ocurrido un error en el metodo GET AutoMapper.AutoMapperMappingException: Missing type map configuration or unsupported mapping.
+
+Mapping types:
+DbQuery`1 -> tblAlertDTO
+System.Data.Entity.Infrastructure.DbQuery`1[[climate_API.Models.entityFramework.tblAlert, climate_API, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]] -> climate_API.Models.DTO.tblAlertDTO
+   en lambda_method(Closure , DbQuery`1 , tblAlertDTO , ResolutionContext )
+   en lambda_method(Closure , Object , Object , ResolutionContext )
+   en AutoMapper.Mapper.AutoMapper.IMapper.Map[TDestination](Object source) en C:\projects\automapper\src\AutoMapper\Mapper.cs:línea 212
+   en AutoMapper.Mapper.Map[TDestination](Object source) en C:\projects\automapper\src\AutoMapper\Mapper.cs:línea 77
+   en climate_API.Classes.Module.tblAlertActions.GET(Int32 ID) en C:\Users\giova\Documents\CLIMATE_PROJECT\API\climate_API\Classes\Module\tblAlertActions.cs:línea 21
+Ha ocurrido un error en el metodo SendAsync Microsoft.IdentityModel.Tokens.SecurityTokenInvalidLifetimeException: IDX10230: Lifetime validation failed. Delegate returned false, securitytoken: 'System.IdentityModel.Tokens.Jwt.JwtSecurityToken'.
+   en Microsoft.IdentityModel.Tokens.Validators.ValidateLifetime(Nullable`1 notBefore, Nullable`1 expires, SecurityToken securityToken, TokenValidationParameters validationParameters)
+   en System.IdentityModel.Tokens.Jwt.JwtSecurityTokenHandler.ValidateLifetime(Nullable`1 notBefore, Nullable`1 expires, JwtSecurityToken jwtToken, TokenValidationParameters validationParameters)
+   en System.IdentityModel.Tokens.Jwt.JwtSecurityTokenHandler.ValidateTokenPayload(JwtSecurityToken jwtToken, TokenValidationParameters validationParameters)
+   en System.IdentityModel.Tokens.Jwt.JwtSecurityTokenHandler.ValidateToken(String token, TokenValidationParameters validationParameters, SecurityToken& validatedToken)
+   en climate_API.Classes.JWT.TokenValidatorHandler.SendAsync(HttpRequestMessage request, CancellationToken cancellationToken) en C:\Users\giova\Documents\CLIMATE_PROJECT\API\climate_API\Classes\JWT\TokenValidatorHandler.cs:línea 67
+Ha ocurrido un error en el metodo SendAsync Microsoft.IdentityModel.Tokens.SecurityTokenInvalidLifetimeException: IDX10230: Lifetime validation failed. Delegate returned false, securitytoken: 'System.IdentityModel.Tokens.Jwt.JwtSecurityToken'.
+   en Microsoft.IdentityModel.Tokens.Validators.ValidateLifetime(Nullable`1 notBefore, Nullable`1 expires, SecurityToken securityToken, TokenValidationParameters validationParameters)
+   en System.IdentityModel.Tokens.Jwt.JwtSecurityTokenHandler.ValidateLifetime(Nullable`1 notBefore, Nullable`1 expires, JwtSecurityToken jwtToken, TokenValidationParameters validationParameters)
+   en System.IdentityModel.Tokens.Jwt.JwtSecurityTokenHandler.ValidateTokenPayload(JwtSecurityToken jwtToken, TokenValidationParameters validationParameters)
+   en System.IdentityModel.Tokens.Jwt.JwtSecurityTokenHandler.ValidateToken(String token, TokenValidationParameters validationParameters, SecurityToken& validatedToken)
+   en climate_API.Classes.JWT.TokenValidatorHandler.SendAsync(HttpRequestMessage request, CancellationToken cancellationToken) en C:\Users\giova\Documents\CLIMATE_PROJECT\API\climate_API\Classes\JWT\TokenValidatorHandler.cs:línea 67
+Ha ocurrido un error en el metodo SendAsync Microsoft.IdentityModel.Tokens.SecurityTokenInvalidLifetimeException: IDX10230: Lifetime validation failed. Delegate returned false, securitytoken: 'System.IdentityModel.Tokens.Jwt.JwtSecurityToken'.
+   en Microsoft.IdentityModel.Tokens.Validators.ValidateLifetime(Nullable`1 notBefore, Nullable`1 expires, SecurityToken securityToken, TokenValidationParameters validationParameters)
+   en System.IdentityModel.Tokens.Jwt.JwtSecurityTokenHandler.ValidateLifetime(Nullable`1 notBefore, Nullable`1 expires, JwtSecurityToken jwtToken, TokenValidationParameters validationParameters)
+   en System.IdentityModel.Tokens.Jwt.JwtSecurityTokenHandler.ValidateTokenPayload(JwtSecurityToken jwtToken, TokenValidationParameters validationParameters)
+   en System.IdentityModel.Tokens.Jwt.JwtSecurityTokenHandler.ValidateToken(String token, TokenValidationParameters validationParameters, SecurityToken& validatedToken)
+   en climate_API.Classes.JWT.TokenValidatorHandler.SendAsync(HttpRequestMessage request, CancellationToken cancellationToken) en C:\Users\giova\Documents\CLIMATE_PROJECT\API\climate_API\Classes\JWT\TokenValidatorHandler.cs:línea 67
+Ha ocurrido un error en el metodo SendAsync Microsoft.IdentityModel.Tokens.SecurityTokenInvalidLifetimeException: IDX10230: Lifetime validation failed. Delegate returned false, securitytoken: 'System.IdentityModel.Tokens.Jwt.JwtSecurityToken'.
+   en Microsoft.IdentityModel.Tokens.Validators.ValidateLifetime(Nullable`1 notBefore, Nullable`1 expires, SecurityToken securityToken, TokenValidationParameters validationParameters)
+   en System.IdentityModel.Tokens.Jwt.JwtSecurityTokenHandler.ValidateLifetime(Nullable`1 notBefore, Nullable`1 expires, JwtSecurityToken jwtToken, TokenValidationParameters validationParameters)
+   en System.IdentityModel.Tokens.Jwt.JwtSecurityTokenHandler.ValidateTokenPayload(JwtSecurityToken jwtToken, TokenValidationParameters validationParameters)
+   en System.IdentityModel.Tokens.Jwt.JwtSecurityTokenHandler.ValidateToken(String token, TokenValidationParameters validationParameters, SecurityToken& validatedToken)
+   en climate_API.Classes.JWT.TokenValidatorHandler.SendAsync(HttpRequestMessage request, CancellationToken cancellationToken) en C:\Users\giova\Documents\CLIMATE_PROJECT\API\climate_API\Classes\JWT\TokenValidatorHandler.cs:línea 67
+Ha ocurrido un error en el metodo SendAsync Microsoft.IdentityModel.Tokens.SecurityTokenInvalidLifetimeException: IDX10230: Lifetime validation failed. Delegate returned false, securitytoken: 'System.IdentityModel.Tokens.Jwt.JwtSecurityToken'.
+   en Microsoft.IdentityModel.Tokens.Validators.ValidateLifetime(Nullable`1 notBefore, Nullable`1 expires, SecurityToken securityToken, TokenValidationParameters validationParameters)
+   en System.IdentityModel.Tokens.Jwt.JwtSecurityTokenHandler.ValidateLifetime(Nullable`1 notBefore, Nullable`1 expires, JwtSecurityToken jwtToken, TokenValidationParameters validationParameters)
+   en System.IdentityModel.Tokens.Jwt.JwtSecurityTokenHandler.ValidateTokenPayload(JwtSecurityToken jwtToken, TokenValidationParameters validationParameters)
+   en System.IdentityModel.Tokens.Jwt.JwtSecurityTokenHandler.ValidateToken(String token, TokenValidationParameters validationParameters, SecurityToken& validatedToken)
+   en climate_API.Classes.JWT.TokenValidatorHandler.SendAsync(HttpRequestMessage request, CancellationToken cancellationToken) en C:\Users\giova\Documents\CLIMATE_PROJECT\API\climate_API\Classes\JWT\TokenValidatorHandler.cs:línea 67
+Ha ocurrido un error en el metodo SendAsync Microsoft.IdentityModel.Tokens.SecurityTokenInvalidLifetimeException: IDX10230: Lifetime validation failed. Delegate returned false, securitytoken: 'System.IdentityModel.Tokens.Jwt.JwtSecurityToken'.
+   en Microsoft.IdentityModel.Tokens.Validators.ValidateLifetime(Nullable`1 notBefore, Nullable`1 expires, SecurityToken securityToken, TokenValidationParameters validationParameters)
+   en System.IdentityModel.Tokens.Jwt.JwtSecurityTokenHandler.ValidateLifetime(Nullable`1 notBefore, Nullable`1 expires, JwtSecurityToken jwtToken, TokenValidationParameters validationParameters)
+   en System.IdentityModel.Tokens.Jwt.JwtSecurityTokenHandler.ValidateTokenPayload(JwtSecurityToken jwtToken, TokenValidationParameters validationParameters)
+   en System.IdentityModel.Tokens.Jwt.JwtSecurityTokenHandler.ValidateToken(String token, TokenValidationParameters validationParameters, SecurityToken& validatedToken)
+   en climate_API.Classes.JWT.TokenValidatorHandler.SendAsync(HttpRequestMessage request, CancellationToken cancellationToken) en C:\Users\giova\Documents\CLIMATE_PROJECT\API\climate_API\Classes\JWT\TokenValidatorHandler.cs:línea 67
+Ha ocurrido un error en el metodo SendAsync Microsoft.IdentityModel.Tokens.SecurityTokenInvalidLifetimeException: IDX10230: Lifetime validation failed. Delegate returned false, securitytoken: 'System.IdentityModel.Tokens.Jwt.JwtSecurityToken'.
+   en Microsoft.IdentityModel.Tokens.Validators.ValidateLifetime(Nullable`1 notBefore, Nullable`1 expires, SecurityToken securityToken, TokenValidationParameters validationParameters)
+   en System.IdentityModel.Tokens.Jwt.JwtSecurityTokenHandler.ValidateLifetime(Nullable`1 notBefore, Nullable`1 expires, JwtSecurityToken jwtToken, TokenValidationParameters validationParameters)
+   en System.IdentityModel.Tokens.Jwt.JwtSecurityTokenHandler.ValidateTokenPayload(JwtSecurityToken jwtToken, TokenValidationParameters validationParameters)
+   en System.IdentityModel.Tokens.Jwt.JwtSecurityTokenHandler.ValidateToken(String token, TokenValidationParameters validationParameters, SecurityToken& validatedToken)
+   en climate_API.Classes.JWT.TokenValidatorHandler.SendAsync(HttpRequestMessage request, CancellationToken cancellationToken) en C:\Users\giova\Documents\CLIMATE_PROJECT\API\climate_API\Classes\JWT\TokenValidatorHandler.cs:línea 67
+Ha ocurrido un error en el metodo SendAsync Microsoft.IdentityModel.Tokens.SecurityTokenInvalidLifetimeException: IDX10230: Lifetime validation failed. Delegate returned false, securitytoken: 'System.IdentityModel.Tokens.Jwt.JwtSecurityToken'.
+   en Microsoft.IdentityModel.Tokens.Validators.ValidateLifetime(Nullable`1 notBefore, Nullable`1 expires, SecurityToken securityToken, TokenValidationParameters validationParameters)
+   en System.IdentityModel.Tokens.Jwt.JwtSecurityTokenHandler.ValidateLifetime(Nullable`1 notBefore, Nullable`1 expires, JwtSecurityToken jwtToken, TokenValidationParameters validationParameters)
+   en System.IdentityModel.Tokens.Jwt.JwtSecurityTokenHandler.ValidateTokenPayload(JwtSecurityToken jwtToken, TokenValidationParameters validationParameters)
+   en System.IdentityModel.Tokens.Jwt.JwtSecurityTokenHandler.ValidateToken(String token, TokenValidationParameters validationParameters, SecurityToken& validatedToken)
+   en climate_API.Classes.JWT.TokenValidatorHandler.SendAsync(HttpRequestMessage request, CancellationToken cancellationToken) en C:\Users\giova\Documents\CLIMATE_PROJECT\API\climate_API\Classes\JWT\TokenValidatorHandler.cs:línea 67
+Ha ocurrido un error en el metodo SendAsync Microsoft.IdentityModel.Tokens.SecurityTokenInvalidLifetimeException: IDX10230: Lifetime validation failed. Delegate returned false, securitytoken: 'System.IdentityModel.Tokens.Jwt.JwtSecurityToken'.
+   en Microsoft.IdentityModel.Tokens.Validators.ValidateLifetime(Nullable`1 notBefore, Nullable`1 expires, SecurityToken securityToken, TokenValidationParameters validationParameters)
+   en System.IdentityModel.Tokens.Jwt.JwtSecurityTokenHandler.ValidateLifetime(Nullable`1 notBefore, Nullable`1 expires, JwtSecurityToken jwtToken, TokenValidationParameters validationParameters)
+   en System.IdentityModel.Tokens.Jwt.JwtSecurityTokenHandler.ValidateTokenPayload(JwtSecurityToken jwtToken, TokenValidationParameters validationParameters)
+   en System.IdentityModel.Tokens.Jwt.JwtSecurityTokenHandler.ValidateToken(String token, TokenValidationParameters validationParameters, SecurityToken& validatedToken)
+   en climate_API.Classes.JWT.TokenValidatorHandler.SendAsync(HttpRequestMessage request, CancellationToken cancellationToken) en C:\Users\giova\Documents\CLIMATE_PROJECT\API\climate_API\Classes\JWT\TokenValidatorHandler.cs:línea 67
+Ha ocurrido un error en el metodo SendAsync Microsoft.IdentityModel.Tokens.SecurityTokenInvalidLifetimeException: IDX10230: Lifetime validation failed. Delegate returned false, securitytoken: 'System.IdentityModel.Tokens.Jwt.JwtSecurityToken'.
+   en Microsoft.IdentityModel.Tokens.Validators.ValidateLifetime(Nullable`1 notBefore, Nullable`1 expires, SecurityToken securityToken, TokenValidationParameters validationParameters)
+   en System.IdentityModel.Tokens.Jwt.JwtSecurityTokenHandler.ValidateLifetime(Nullable`1 notBefore, Nullable`1 expires, JwtSecurityToken jwtToken, TokenValidationParameters validationParameters)
+   en System.IdentityModel.Tokens.Jwt.JwtSecurityTokenHandler.ValidateTokenPayload(JwtSecurityToken jwtToken, TokenValidationParameters validationParameters)
+   en System.IdentityModel.Tokens.Jwt.JwtSecurityTokenHandler.ValidateToken(String token, TokenValidationParameters validationParameters, SecurityToken& validatedToken)
+   en climate_API.Classes.JWT.TokenValidatorHandler.SendAsync(HttpRequestMessage request, CancellationToken cancellationToken) en C:\Users\giova\Documents\CLIMATE_PROJECT\API\climate_API\Classes\JWT\TokenValidatorHandler.cs:línea 67
+Ha ocurrido un error en el metodo SendAsync Microsoft.IdentityModel.Tokens.SecurityTokenInvalidLifetimeException: IDX10230: Lifetime validation failed. Delegate returned false, securitytoken: 'System.IdentityModel.Tokens.Jwt.JwtSecurityToken'.
+   en Microsoft.IdentityModel.Tokens.Validators.ValidateLifetime(Nullable`1 notBefore, Nullable`1 expires, SecurityToken securityToken, TokenValidationParameters validationParameters)
+   en System.IdentityModel.Tokens.Jwt.JwtSecurityTokenHandler.ValidateLifetime(Nullable`1 notBefore, Nullable`1 expires, JwtSecurityToken jwtToken, TokenValidationParameters validationParameters)
+   en System.IdentityModel.Tokens.Jwt.JwtSecurityTokenHandler.ValidateTokenPayload(JwtSecurityToken jwtToken, TokenValidationParameters validationParameters)
+   en System.IdentityModel.Tokens.Jwt.JwtSecurityTokenHandler.ValidateToken(String token, TokenValidationParameters validationParameters, SecurityToken& validatedToken)
+   en climate_API.Classes.JWT.TokenValidatorHandler.SendAsync(HttpRequestMessage request, CancellationToken cancellationToken) en C:\Users\giova\Documents\CLIMATE_PROJECT\API\climate_API\Classes\JWT\TokenValidatorHandler.cs:línea 67
+Ha ocurrido un error en el metodo SendAsync Microsoft.IdentityModel.Tokens.SecurityTokenInvalidLifetimeException: IDX10230: Lifetime validation failed. Delegate returned false, securitytoken: 'System.IdentityModel.Tokens.Jwt.JwtSecurityToken'.
+   en Microsoft.IdentityModel.Tokens.Validators.ValidateLifetime(Nullable`1 notBefore, Nullable`1 expires, SecurityToken securityToken, TokenValidationParameters validationParameters)
+   en System.IdentityModel.Tokens.Jwt.JwtSecurityTokenHandler.ValidateLifetime(Nullable`1 notBefore, Nullable`1 expires, JwtSecurityToken jwtToken, TokenValidationParameters validationParameters)
+   en System.IdentityModel.Tokens.Jwt.JwtSecurityTokenHandler.ValidateTokenPayload(JwtSecurityToken jwtToken, TokenValidationParameters validationParameters)
+   en System.IdentityModel.Tokens.Jwt.JwtSecurityTokenHandler.ValidateToken(String token, TokenValidationParameters validationParameters, SecurityToken& validatedToken)
+   en climate_API.Classes.JWT.TokenValidatorHandler.SendAsync(HttpRequestMessage request, CancellationToken cancellationToken) en C:\Users\giova\Documents\CLIMATE_PROJECT\API\climate_API\Classes\JWT\TokenValidatorHandler.cs:línea 67
+Ha ocurrido un error en el metodo SendAsync Microsoft.IdentityModel.Tokens.SecurityTokenInvalidLifetimeException: IDX10230: Lifetime validation failed. Delegate returned false, securitytoken: 'System.IdentityModel.Tokens.Jwt.JwtSecurityToken'.
+   en Microsoft.IdentityModel.Tokens.Validators.ValidateLifetime(Nullable`1 notBefore, Nullable`1 expires, SecurityToken securityToken, TokenValidationParameters validationParameters)
+   en System.IdentityModel.Tokens.Jwt.JwtSecurityTokenHandler.ValidateLifetime(Nullable`1 notBefore, Nullable`1 expires, JwtSecurityToken jwtToken, TokenValidationParameters validationParameters)
+   en System.IdentityModel.Tokens.Jwt.JwtSecurityTokenHandler.ValidateTokenPayload(JwtSecurityToken jwtToken, TokenValidationParameters validationParameters)
+   en System.IdentityModel.Tokens.Jwt.JwtSecurityTokenHandler.ValidateToken(String token, TokenValidationParameters validationParameters, SecurityToken& validatedToken)
+   en climate_API.Classes.JWT.TokenValidatorHandler.SendAsync(HttpRequestMessage request, CancellationToken cancellationToken) en C:\Users\giova\Documents\CLIMATE_PROJECT\API\climate_API\Classes\JWT\TokenValidatorHandler.cs:línea 67
+Ha ocurrido un error en el metodo SendAsync Microsoft.IdentityModel.Tokens.SecurityTokenInvalidLifetimeException: IDX10230: Lifetime validation failed. Delegate returned false, securitytoken: 'System.IdentityModel.Tokens.Jwt.JwtSecurityToken'.
+   en Microsoft.IdentityModel.Tokens.Validators.ValidateLifetime(Nullable`1 notBefore, Nullable`1 expires, SecurityToken securityToken, TokenValidationParameters validationParameters)
+   en System.IdentityModel.Tokens.Jwt.JwtSecurityTokenHandler.ValidateLifetime(Nullable`1 notBefore, Nullable`1 expires, JwtSecurityToken jwtToken, TokenValidationParameters validationParameters)
+   en System.IdentityModel.Tokens.Jwt.JwtSecurityTokenHandler.ValidateTokenPayload(JwtSecurityToken jwtToken, TokenValidationParameters validationParameters)
+   en System.IdentityModel.Tokens.Jwt.JwtSecurityTokenHandler.ValidateToken(String token, TokenValidationParameters validationParameters, SecurityToken& validatedToken)
+   en climate_API.Classes.JWT.TokenValidatorHandler.SendAsync(HttpRequestMessage request, CancellationToken cancellationToken) en C:\Users\giova\Documents\CLIMATE_PROJECT\API\climate_API\Classes\JWT\TokenValidatorHandler.cs:línea 67
+Ha ocurrido un error en el metodo SendAsync Microsoft.IdentityModel.Tokens.SecurityTokenInvalidLifetimeException: IDX10230: Lifetime validation failed. Delegate returned false, securitytoken: 'System.IdentityModel.Tokens.Jwt.JwtSecurityToken'.
+   en Microsoft.IdentityModel.Tokens.Validators.ValidateLifetime(Nullable`1 notBefore, Nullable`1 expires, SecurityToken securityToken, TokenValidationParameters validationParameters)
+   en System.IdentityModel.Tokens.Jwt.JwtSecurityTokenHandler.ValidateLifetime(Nullable`1 notBefore, Nullable`1 expires, JwtSecurityToken jwtToken, TokenValidationParameters validationParameters)
+   en System.IdentityModel.Tokens.Jwt.JwtSecurityTokenHandler.ValidateTokenPayload(JwtSecurityToken jwtToken, TokenValidationParameters validationParameters)
+   en System.IdentityModel.Tokens.Jwt.JwtSecurityTokenHandler.ValidateToken(String token, TokenValidationParameters validationParameters, SecurityToken& validatedToken)
+   en climate_API.Classes.JWT.TokenValidatorHandler.SendAsync(HttpRequestMessage request, CancellationToken cancellationToken) en C:\Users\giova\Documents\CLIMATE_PROJECT\API\climate_API\Classes\JWT\TokenValidatorHandler.cs:línea 67
+Ha ocurrido un error en el metodo UPDATE System.Data.Entity.Infrastructure.DbUpdateConcurrencyException: Store update, insert, or delete statement affected an unexpected number of rows (0). Entities may have been modified or deleted since entities were loaded. See http://go.microsoft.com/fwlink/?LinkId=472540 for information on understanding and handling optimistic concurrency exceptions. ---> System.Data.Entity.Core.OptimisticConcurrencyException: Store update, insert, or delete statement affected an unexpected number of rows (0). Entities may have been modified or deleted since entities were loaded. See http://go.microsoft.com/fwlink/?LinkId=472540 for information on understanding and handling optimistic concurrency exceptions.
+   en System.Data.Entity.Core.Mapping.Update.Internal.UpdateTranslator.ValidateRowsAffected(Int64 rowsAffected, UpdateCommand source)
+   en System.Data.Entity.Core.Mapping.Update.Internal.UpdateTranslator.Update()
+   en System.Data.Entity.Core.EntityClient.Internal.EntityAdapter.<Update>b__2(UpdateTranslator ut)
+   en System.Data.Entity.Core.EntityClient.Internal.EntityAdapter.Update[T](T noChangesResult, Func`2 updateFunction)
+   en System.Data.Entity.Core.EntityClient.Internal.EntityAdapter.Update()
+   en System.Data.Entity.Core.Objects.ObjectContext.<SaveChangesToStore>b__35()
+   en System.Data.Entity.Core.Objects.ObjectContext.ExecuteInTransaction[T](Func`1 func, IDbExecutionStrategy executionStrategy, Boolean startLocalTransaction, Boolean releaseConnectionOnSuccess)
+   en System.Data.Entity.Core.Objects.ObjectContext.SaveChangesToStore(SaveOptions options, IDbExecutionStrategy executionStrategy, Boolean startLocalTransaction)
+   en System.Data.Entity.Core.Objects.ObjectContext.<>c__DisplayClass2a.<SaveChangesInternal>b__27()
+   en System.Data.Entity.SqlServer.DefaultSqlExecutionStrategy.Execute[TResult](Func`1 operation)
+   en System.Data.Entity.Core.Objects.ObjectContext.SaveChangesInternal(SaveOptions options, Boolean executeInExistingTransaction)
+   en System.Data.Entity.Core.Objects.ObjectContext.SaveChanges(SaveOptions options)
+   en System.Data.Entity.Internal.InternalContext.SaveChanges()
+   --- Fin del seguimiento de la pila de la excepción interna ---
+   en System.Data.Entity.Internal.InternalContext.SaveChanges()
+   en System.Data.Entity.Internal.LazyInternalContext.SaveChanges()
+   en System.Data.Entity.DbContext.SaveChanges()
+   en climate_API.Classes.Module.tblWeatherForecastActions.UPDATE(WeatherForecastInsert OBJ) en C:\Users\giova\Documents\CLIMATE_PROJECT\API\climate_API\Classes\Module\tblWeatherForecastActions.cs:línea 119
+Ha ocurrido un error en el metodo UPDATE System.Data.Entity.Infrastructure.DbUpdateConcurrencyException: Store update, insert, or delete statement affected an unexpected number of rows (0). Entities may have been modified or deleted since entities were loaded. See http://go.microsoft.com/fwlink/?LinkId=472540 for information on understanding and handling optimistic concurrency exceptions. ---> System.Data.Entity.Core.OptimisticConcurrencyException: Store update, insert, or delete statement affected an unexpected number of rows (0). Entities may have been modified or deleted since entities were loaded. See http://go.microsoft.com/fwlink/?LinkId=472540 for information on understanding and handling optimistic concurrency exceptions.
+   en System.Data.Entity.Core.Mapping.Update.Internal.UpdateTranslator.ValidateRowsAffected(Int64 rowsAffected, UpdateCommand source)
+   en System.Data.Entity.Core.Mapping.Update.Internal.UpdateTranslator.Update()
+   en System.Data.Entity.Core.EntityClient.Internal.EntityAdapter.<Update>b__2(UpdateTranslator ut)
+   en System.Data.Entity.Core.EntityClient.Internal.EntityAdapter.Update[T](T noChangesResult, Func`2 updateFunction)
+   en System.Data.Entity.Core.EntityClient.Internal.EntityAdapter.Update()
+   en System.Data.Entity.Core.Objects.ObjectContext.<SaveChangesToStore>b__35()
+   en System.Data.Entity.Core.Objects.ObjectContext.ExecuteInTransaction[T](Func`1 func, IDbExecutionStrategy executionStrategy, Boolean startLocalTransaction, Boolean releaseConnectionOnSuccess)
+   en System.Data.Entity.Core.Objects.ObjectContext.SaveChangesToStore(SaveOptions options, IDbExecutionStrategy executionStrategy, Boolean startLocalTransaction)
+   en System.Data.Entity.Core.Objects.ObjectContext.<>c__DisplayClass2a.<SaveChangesInternal>b__27()
+   en System.Data.Entity.SqlServer.DefaultSqlExecutionStrategy.Execute[TResult](Func`1 operation)
+   en System.Data.Entity.Core.Objects.ObjectContext.SaveChangesInternal(SaveOptions options, Boolean executeInExistingTransaction)
+   en System.Data.Entity.Core.Objects.ObjectContext.SaveChanges(SaveOptions options)
+   en System.Data.Entity.Internal.InternalContext.SaveChanges()
+   --- Fin del seguimiento de la pila de la excepción interna ---
+   en System.Data.Entity.Internal.InternalContext.SaveChanges()
+   en System.Data.Entity.Internal.LazyInternalContext.SaveChanges()
+   en System.Data.Entity.DbContext.SaveChanges()
+   en climate_API.Classes.Module.tblWeatherForecastActions.UPDATE(WeatherForecastInsert OBJ) en C:\Users\giova\Documents\CLIMATE_PROJECT\API\climate_API\Classes\Module\tblWeatherForecastActions.cs:línea 119
+Ha ocurrido un error en el metodo UPDATE System.Data.Entity.Infrastructure.DbUpdateException: An error occurred while updating the entries. See the inner exception for details. ---> System.Data.Entity.Core.UpdateException: An error occurred while updating the entries. See the inner exception for details. ---> System.Data.SqlClient.SqlException: The conversion of a datetime2 data type to a datetime data type resulted in an out-of-range value.
+The statement has been terminated.
+   en System.Data.SqlClient.SqlConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   en System.Data.SqlClient.SqlInternalConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   en System.Data.SqlClient.TdsParser.ThrowExceptionAndWarning(TdsParserStateObject stateObj, Boolean callerHasConnectionLock, Boolean asyncClose)
+   en System.Data.SqlClient.TdsParser.TryRun(RunBehavior runBehavior, SqlCommand cmdHandler, SqlDataReader dataStream, BulkCopySimpleResultSet bulkCopyHandler, TdsParserStateObject stateObj, Boolean& dataReady)
+   en System.Data.SqlClient.SqlCommand.FinishExecuteReader(SqlDataReader ds, RunBehavior runBehavior, String resetOptionsString, Boolean isInternal, Boolean forDescribeParameterEncryption, Boolean shouldCacheForAlwaysEncrypted)
+   en System.Data.SqlClient.SqlCommand.RunExecuteReaderTds(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, Boolean async, Int32 timeout, Task& task, Boolean asyncWrite, Boolean inRetry, SqlDataReader ds, Boolean describeParameterEncryptionRequest)
+   en System.Data.SqlClient.SqlCommand.RunExecuteReader(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, String method, TaskCompletionSource`1 completion, Int32 timeout, Task& task, Boolean& usedCache, Boolean asyncWrite, Boolean inRetry)
+   en System.Data.SqlClient.SqlCommand.InternalExecuteNonQuery(TaskCompletionSource`1 completion, String methodName, Boolean sendToPipe, Int32 timeout, Boolean& usedCache, Boolean asyncWrite, Boolean inRetry)
+   en System.Data.SqlClient.SqlCommand.ExecuteNonQuery()
+   en System.Data.Entity.Infrastructure.Interception.DbCommandDispatcher.<NonQuery>b__0(DbCommand t, DbCommandInterceptionContext`1 c)
+   en System.Data.Entity.Infrastructure.Interception.InternalDispatcher`1.Dispatch[TTarget,TInterceptionContext,TResult](TTarget target, Func`3 operation, TInterceptionContext interceptionContext, Action`3 executing, Action`3 executed)
+   en System.Data.Entity.Infrastructure.Interception.DbCommandDispatcher.NonQuery(DbCommand command, DbCommandInterceptionContext interceptionContext)
+   en System.Data.Entity.Internal.InterceptableDbCommand.ExecuteNonQuery()
+   en System.Data.Entity.Core.Mapping.Update.Internal.DynamicUpdateCommand.Execute(Dictionary`2 identifierValues, List`1 generatedValues)
+   en System.Data.Entity.Core.Mapping.Update.Internal.UpdateTranslator.Update()
+   --- Fin del seguimiento de la pila de la excepción interna ---
+   en System.Data.Entity.Core.Mapping.Update.Internal.UpdateTranslator.Update()
+   en System.Data.Entity.Core.EntityClient.Internal.EntityAdapter.<Update>b__2(UpdateTranslator ut)
+   en System.Data.Entity.Core.EntityClient.Internal.EntityAdapter.Update[T](T noChangesResult, Func`2 updateFunction)
+   en System.Data.Entity.Core.EntityClient.Internal.EntityAdapter.Update()
+   en System.Data.Entity.Core.Objects.ObjectContext.<SaveChangesToStore>b__35()
+   en System.Data.Entity.Core.Objects.ObjectContext.ExecuteInTransaction[T](Func`1 func, IDbExecutionStrategy executionStrategy, Boolean startLocalTransaction, Boolean releaseConnectionOnSuccess)
+   en System.Data.Entity.Core.Objects.ObjectContext.SaveChangesToStore(SaveOptions options, IDbExecutionStrategy executionStrategy, Boolean startLocalTransaction)
+   en System.Data.Entity.Core.Objects.ObjectContext.<>c__DisplayClass2a.<SaveChangesInternal>b__27()
+   en System.Data.Entity.SqlServer.DefaultSqlExecutionStrategy.Execute[TResult](Func`1 operation)
+   en System.Data.Entity.Core.Objects.ObjectContext.SaveChangesInternal(SaveOptions options, Boolean executeInExistingTransaction)
+   en System.Data.Entity.Core.Objects.ObjectContext.SaveChanges(SaveOptions options)
+   en System.Data.Entity.Internal.InternalContext.SaveChanges()
+   --- Fin del seguimiento de la pila de la excepción interna ---
+   en System.Data.Entity.Internal.InternalContext.SaveChanges()
+   en System.Data.Entity.Internal.LazyInternalContext.SaveChanges()
+   en System.Data.Entity.DbContext.SaveChanges()
+   en climate_API.Classes.Module.tblWeatherForecastActions.UPDATE(WeatherForecastInsert OBJ) en C:\Users\giova\Documents\CLIMATE_PROJECT\API\climate_API\Classes\Module\tblWeatherForecastActions.cs:línea 125
+Ha ocurrido un error en el metodo UPDATE System.InvalidOperationException: The operation cannot be completed because the DbContext has been disposed.
+   en System.Data.Entity.Internal.LazyInternalContext.InitializeContext()
+   en System.Data.Entity.Internal.LazyInternalContext.get_ObjectContext()
+   en System.Data.Entity.Internal.InternalContext.DetectChanges(Boolean force)
+   en System.Data.Entity.Internal.InternalContext.GetStateEntry(Object entity)
+   en System.Data.Entity.Internal.InternalEntityEntry..ctor(InternalContext internalContext, Object entity)
+   en System.Data.Entity.DbContext.Entry[TEntity](TEntity entity)
+   en climate_API.Classes.Module.tblWeatherForecastActions.UPDATE(WeatherForecastInsert OBJ) en C:\Users\giova\Documents\CLIMATE_PROJECT\API\climate_API\Classes\Module\tblWeatherForecastActions.cs:línea 130

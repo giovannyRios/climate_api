@@ -1,0 +1,474 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<edmx:Edmx Version="3.0" xmlns:edmx="http://schemas.microsoft.com/ado/2009/11/edmx">
+  <!-- EF Runtime content -->
+  <edmx:Runtime>
+    <!-- SSDL content -->
+    <edmx:StorageModels>
+    <Schema Namespace="climateModel.Store" Provider="System.Data.SqlClient" ProviderManifestToken="2012" Alias="Self" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm/ssdl">
+        <EntityType Name="tblAlert">
+          <Key>
+            <PropertyRef Name="ID" />
+          </Key>
+          <Property Name="ID" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+          <Property Name="NameAlert" Type="varchar" MaxLength="20" Nullable="false" />
+        </EntityType>
+        <EntityType Name="tblClimaticPhenomenon">
+          <Key>
+            <PropertyRef Name="ID" />
+          </Key>
+          <Property Name="ID" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+          <Property Name="DescriptionClimaticPhenomenon" Type="varchar" MaxLength="600" Nullable="false" />
+        </EntityType>
+        <EntityType Name="tblCountry">
+          <Key>
+            <PropertyRef Name="ID" />
+          </Key>
+          <Property Name="ID" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+          <Property Name="NameCountry" Type="varchar" MaxLength="100" Nullable="false" />
+        </EntityType>
+        <EntityType Name="tblTerritory">
+          <Key>
+            <PropertyRef Name="ID" />
+          </Key>
+          <Property Name="ID" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+          <Property Name="NameTerritory" Type="varchar" MaxLength="100" Nullable="false" />
+          <Property Name="Id_Country" Type="int" Nullable="false" />
+        </EntityType>
+        <EntityType Name="tblTypeTemperature">
+          <Key>
+            <PropertyRef Name="ID" />
+          </Key>
+          <Property Name="ID" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+          <Property Name="NameTypeTemp" Type="varchar" MaxLength="20" Nullable="false" />
+        </EntityType>
+        <EntityType Name="tblUsers">
+          <Key>
+            <PropertyRef Name="ID" />
+          </Key>
+          <Property Name="ID" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+          <Property Name="userName" Type="varchar" MaxLength="1000" Nullable="false" />
+          <Property Name="userPassword" Type="varchar" MaxLength="1000" Nullable="false" />
+        </EntityType>
+        <EntityType Name="tblWeatherForecast">
+          <Key>
+            <PropertyRef Name="ID" />
+          </Key>
+          <Property Name="ID" Type="bigint" StoreGeneratedPattern="Identity" Nullable="false" />
+          <Property Name="ClimaticDescription" Type="varchar" MaxLength="200" Nullable="false" />
+          <Property Name="DateRegister" Type="datetime" Nullable="false" />
+          <Property Name="Temperature" Type="decimal" Precision="3" Scale="1" Nullable="false" />
+          <Property Name="IdTypeTemperature" Type="int" Nullable="false" />
+          <Property Name="IdClimaticPhenomenon" Type="int" />
+          <Property Name="IdAlert" Type="int" />
+          <Property Name="IdWeatherStation" Type="int" Nullable="false" />
+          <Property Name="StateRegister" Type="int" Nullable="false" />
+        </EntityType>
+        <EntityType Name="tblWeatherStation">
+          <Key>
+            <PropertyRef Name="ID" />
+          </Key>
+          <Property Name="ID" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+          <Property Name="NumStation" Type="int" Nullable="false" />
+          <Property Name="NameStation" Type="varchar" MaxLength="200" Nullable="false" />
+          <Property Name="Id_Territory" Type="int" Nullable="false" />
+        </EntityType>
+        <Association Name="FK_Id_Country">
+          <End Role="tblCountry" Type="Self.tblCountry" Multiplicity="1" />
+          <End Role="tblTerritory" Type="Self.tblTerritory" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="tblCountry">
+              <PropertyRef Name="ID" />
+            </Principal>
+            <Dependent Role="tblTerritory">
+              <PropertyRef Name="Id_Country" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_Id_Territory">
+          <End Role="tblTerritory" Type="Self.tblTerritory" Multiplicity="1" />
+          <End Role="tblWeatherStation" Type="Self.tblWeatherStation" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="tblTerritory">
+              <PropertyRef Name="ID" />
+            </Principal>
+            <Dependent Role="tblWeatherStation">
+              <PropertyRef Name="Id_Territory" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_IdAlert">
+          <End Role="tblAlert" Type="Self.tblAlert" Multiplicity="0..1" />
+          <End Role="tblWeatherForecast" Type="Self.tblWeatherForecast" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="tblAlert">
+              <PropertyRef Name="ID" />
+            </Principal>
+            <Dependent Role="tblWeatherForecast">
+              <PropertyRef Name="IdAlert" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_IdClimaticPhenomenon">
+          <End Role="tblClimaticPhenomenon" Type="Self.tblClimaticPhenomenon" Multiplicity="0..1" />
+          <End Role="tblWeatherForecast" Type="Self.tblWeatherForecast" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="tblClimaticPhenomenon">
+              <PropertyRef Name="ID" />
+            </Principal>
+            <Dependent Role="tblWeatherForecast">
+              <PropertyRef Name="IdClimaticPhenomenon" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_IdTypeTemperature">
+          <End Role="tblTypeTemperature" Type="Self.tblTypeTemperature" Multiplicity="1" />
+          <End Role="tblWeatherForecast" Type="Self.tblWeatherForecast" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="tblTypeTemperature">
+              <PropertyRef Name="ID" />
+            </Principal>
+            <Dependent Role="tblWeatherForecast">
+              <PropertyRef Name="IdTypeTemperature" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_IdWeatherStation">
+          <End Role="tblWeatherStation" Type="Self.tblWeatherStation" Multiplicity="1" />
+          <End Role="tblWeatherForecast" Type="Self.tblWeatherForecast" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="tblWeatherStation">
+              <PropertyRef Name="ID" />
+            </Principal>
+            <Dependent Role="tblWeatherForecast">
+              <PropertyRef Name="IdWeatherStation" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <EntityContainer Name="climateModelStoreContainer">
+          <EntitySet Name="tblAlert" EntityType="Self.tblAlert" Schema="dbo" store:Type="Tables" />
+          <EntitySet Name="tblClimaticPhenomenon" EntityType="Self.tblClimaticPhenomenon" Schema="dbo" store:Type="Tables" />
+          <EntitySet Name="tblCountry" EntityType="Self.tblCountry" Schema="dbo" store:Type="Tables" />
+          <EntitySet Name="tblTerritory" EntityType="Self.tblTerritory" Schema="dbo" store:Type="Tables" />
+          <EntitySet Name="tblTypeTemperature" EntityType="Self.tblTypeTemperature" Schema="dbo" store:Type="Tables" />
+          <EntitySet Name="tblUsers" EntityType="Self.tblUsers" Schema="dbo" store:Type="Tables" />
+          <EntitySet Name="tblWeatherForecast" EntityType="Self.tblWeatherForecast" Schema="dbo" store:Type="Tables" />
+          <EntitySet Name="tblWeatherStation" EntityType="Self.tblWeatherStation" Schema="dbo" store:Type="Tables" />
+          <AssociationSet Name="FK_Id_Country" Association="Self.FK_Id_Country">
+            <End Role="tblCountry" EntitySet="tblCountry" />
+            <End Role="tblTerritory" EntitySet="tblTerritory" />
+          </AssociationSet>
+          <AssociationSet Name="FK_Id_Territory" Association="Self.FK_Id_Territory">
+            <End Role="tblTerritory" EntitySet="tblTerritory" />
+            <End Role="tblWeatherStation" EntitySet="tblWeatherStation" />
+          </AssociationSet>
+          <AssociationSet Name="FK_IdAlert" Association="Self.FK_IdAlert">
+            <End Role="tblAlert" EntitySet="tblAlert" />
+            <End Role="tblWeatherForecast" EntitySet="tblWeatherForecast" />
+          </AssociationSet>
+          <AssociationSet Name="FK_IdClimaticPhenomenon" Association="Self.FK_IdClimaticPhenomenon">
+            <End Role="tblClimaticPhenomenon" EntitySet="tblClimaticPhenomenon" />
+            <End Role="tblWeatherForecast" EntitySet="tblWeatherForecast" />
+          </AssociationSet>
+          <AssociationSet Name="FK_IdTypeTemperature" Association="Self.FK_IdTypeTemperature">
+            <End Role="tblTypeTemperature" EntitySet="tblTypeTemperature" />
+            <End Role="tblWeatherForecast" EntitySet="tblWeatherForecast" />
+          </AssociationSet>
+          <AssociationSet Name="FK_IdWeatherStation" Association="Self.FK_IdWeatherStation">
+            <End Role="tblWeatherStation" EntitySet="tblWeatherStation" />
+            <End Role="tblWeatherForecast" EntitySet="tblWeatherForecast" />
+          </AssociationSet>
+        </EntityContainer>
+      </Schema></edmx:StorageModels>
+    <!-- CSDL content -->
+    <edmx:ConceptualModels>
+      <Schema Namespace="climateModel" Alias="Self" annotation:UseStrongSpatialTypes="false" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm">
+        <EntityType Name="tblAlert">
+          <Key>
+            <PropertyRef Name="ID" />
+          </Key>
+          <Property Name="ID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="NameAlert" Type="String" MaxLength="20" FixedLength="false" Unicode="false" Nullable="false" />
+          <NavigationProperty Name="tblWeatherForecast" Relationship="Self.FK_IdAlert" FromRole="tblAlert" ToRole="tblWeatherForecast" />
+        </EntityType>
+        <EntityType Name="tblClimaticPhenomenon">
+          <Key>
+            <PropertyRef Name="ID" />
+          </Key>
+          <Property Name="ID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="DescriptionClimaticPhenomenon" Type="String" MaxLength="600" FixedLength="false" Unicode="false" Nullable="false" />
+          <NavigationProperty Name="tblWeatherForecast" Relationship="Self.FK_IdClimaticPhenomenon" FromRole="tblClimaticPhenomenon" ToRole="tblWeatherForecast" />
+        </EntityType>
+        <EntityType Name="tblCountry">
+          <Key>
+            <PropertyRef Name="ID" />
+          </Key>
+          <Property Name="ID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="NameCountry" Type="String" MaxLength="100" FixedLength="false" Unicode="false" Nullable="false" />
+          <NavigationProperty Name="tblTerritory" Relationship="Self.FK_Id_Country" FromRole="tblCountry" ToRole="tblTerritory" />
+        </EntityType>
+        <EntityType Name="tblTerritory">
+          <Key>
+            <PropertyRef Name="ID" />
+          </Key>
+          <Property Name="ID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="NameTerritory" Type="String" MaxLength="100" FixedLength="false" Unicode="false" Nullable="false" />
+          <Property Name="Id_Country" Type="Int32" Nullable="false" />
+          <NavigationProperty Name="tblCountry" Relationship="Self.FK_Id_Country" FromRole="tblTerritory" ToRole="tblCountry" />
+          <NavigationProperty Name="tblWeatherStation" Relationship="Self.FK_Id_Territory" FromRole="tblTerritory" ToRole="tblWeatherStation" />
+        </EntityType>
+        <EntityType Name="tblTypeTemperature">
+          <Key>
+            <PropertyRef Name="ID" />
+          </Key>
+          <Property Name="ID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="NameTypeTemp" Type="String" MaxLength="20" FixedLength="false" Unicode="false" Nullable="false" />
+          <NavigationProperty Name="tblWeatherForecast" Relationship="Self.FK_IdTypeTemperature" FromRole="tblTypeTemperature" ToRole="tblWeatherForecast" />
+        </EntityType>
+        <EntityType Name="tblUsers">
+          <Key>
+            <PropertyRef Name="ID" />
+          </Key>
+          <Property Name="ID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="userName" Type="String" MaxLength="1000" FixedLength="false" Unicode="false" Nullable="false" />
+          <Property Name="userPassword" Type="String" MaxLength="1000" FixedLength="false" Unicode="false" Nullable="false" />
+        </EntityType>
+        <EntityType Name="tblWeatherForecast">
+          <Key>
+            <PropertyRef Name="ID" />
+          </Key>
+          <Property Name="ID" Type="Int64" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="ClimaticDescription" Type="String" MaxLength="200" FixedLength="false" Unicode="false" Nullable="false" />
+          <Property Name="DateRegister" Type="DateTime" Nullable="false" Precision="3" />
+          <Property Name="Temperature" Type="Decimal" Precision="3" Scale="1" Nullable="false" />
+          <Property Name="IdTypeTemperature" Type="Int32" Nullable="false" />
+          <Property Name="IdClimaticPhenomenon" Type="Int32" />
+          <Property Name="IdAlert" Type="Int32" />
+          <Property Name="IdWeatherStation" Type="Int32" Nullable="false" />
+          <NavigationProperty Name="tblAlert" Relationship="Self.FK_IdAlert" FromRole="tblWeatherForecast" ToRole="tblAlert" />
+          <NavigationProperty Name="tblClimaticPhenomenon" Relationship="Self.FK_IdClimaticPhenomenon" FromRole="tblWeatherForecast" ToRole="tblClimaticPhenomenon" />
+          <NavigationProperty Name="tblTypeTemperature" Relationship="Self.FK_IdTypeTemperature" FromRole="tblWeatherForecast" ToRole="tblTypeTemperature" />
+          <NavigationProperty Name="tblWeatherStation" Relationship="Self.FK_IdWeatherStation" FromRole="tblWeatherForecast" ToRole="tblWeatherStation" />
+          <Property Name="StateRegister" Type="Int32" Nullable="false" />
+        </EntityType>
+        <EntityType Name="tblWeatherStation">
+          <Key>
+            <PropertyRef Name="ID" />
+          </Key>
+          <Property Name="ID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="NumStation" Type="Int32" Nullable="false" />
+          <Property Name="NameStation" Type="String" MaxLength="200" FixedLength="false" Unicode="false" Nullable="false" />
+          <Property Name="Id_Territory" Type="Int32" Nullable="false" />
+          <NavigationProperty Name="tblTerritory" Relationship="Self.FK_Id_Territory" FromRole="tblWeatherStation" ToRole="tblTerritory" />
+          <NavigationProperty Name="tblWeatherForecast" Relationship="Self.FK_IdWeatherStation" FromRole="tblWeatherStation" ToRole="tblWeatherForecast" />
+        </EntityType>
+        <Association Name="FK_IdAlert">
+          <End Role="tblAlert" Type="Self.tblAlert" Multiplicity="0..1" />
+          <End Role="tblWeatherForecast" Type="Self.tblWeatherForecast" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="tblAlert">
+              <PropertyRef Name="ID" />
+            </Principal>
+            <Dependent Role="tblWeatherForecast">
+              <PropertyRef Name="IdAlert" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_IdClimaticPhenomenon">
+          <End Role="tblClimaticPhenomenon" Type="Self.tblClimaticPhenomenon" Multiplicity="0..1" />
+          <End Role="tblWeatherForecast" Type="Self.tblWeatherForecast" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="tblClimaticPhenomenon">
+              <PropertyRef Name="ID" />
+            </Principal>
+            <Dependent Role="tblWeatherForecast">
+              <PropertyRef Name="IdClimaticPhenomenon" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_Id_Country">
+          <End Role="tblCountry" Type="Self.tblCountry" Multiplicity="1" />
+          <End Role="tblTerritory" Type="Self.tblTerritory" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="tblCountry">
+              <PropertyRef Name="ID" />
+            </Principal>
+            <Dependent Role="tblTerritory">
+              <PropertyRef Name="Id_Country" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_Id_Territory">
+          <End Role="tblTerritory" Type="Self.tblTerritory" Multiplicity="1" />
+          <End Role="tblWeatherStation" Type="Self.tblWeatherStation" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="tblTerritory">
+              <PropertyRef Name="ID" />
+            </Principal>
+            <Dependent Role="tblWeatherStation">
+              <PropertyRef Name="Id_Territory" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_IdTypeTemperature">
+          <End Role="tblTypeTemperature" Type="Self.tblTypeTemperature" Multiplicity="1" />
+          <End Role="tblWeatherForecast" Type="Self.tblWeatherForecast" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="tblTypeTemperature">
+              <PropertyRef Name="ID" />
+            </Principal>
+            <Dependent Role="tblWeatherForecast">
+              <PropertyRef Name="IdTypeTemperature" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_IdWeatherStation">
+          <End Role="tblWeatherStation" Type="Self.tblWeatherStation" Multiplicity="1" />
+          <End Role="tblWeatherForecast" Type="Self.tblWeatherForecast" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="tblWeatherStation">
+              <PropertyRef Name="ID" />
+            </Principal>
+            <Dependent Role="tblWeatherForecast">
+              <PropertyRef Name="IdWeatherStation" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <EntityContainer Name="climateEntities" annotation:LazyLoadingEnabled="true">
+          <EntitySet Name="tblAlert" EntityType="Self.tblAlert" />
+          <EntitySet Name="tblClimaticPhenomenon" EntityType="Self.tblClimaticPhenomenon" />
+          <EntitySet Name="tblCountry" EntityType="Self.tblCountry" />
+          <EntitySet Name="tblTerritory" EntityType="Self.tblTerritory" />
+          <EntitySet Name="tblTypeTemperature" EntityType="Self.tblTypeTemperature" />
+          <EntitySet Name="tblUsers" EntityType="Self.tblUsers" />
+          <EntitySet Name="tblWeatherForecast" EntityType="Self.tblWeatherForecast" />
+          <EntitySet Name="tblWeatherStation" EntityType="Self.tblWeatherStation" />
+          <AssociationSet Name="FK_IdAlert" Association="Self.FK_IdAlert">
+            <End Role="tblAlert" EntitySet="tblAlert" />
+            <End Role="tblWeatherForecast" EntitySet="tblWeatherForecast" />
+          </AssociationSet>
+          <AssociationSet Name="FK_IdClimaticPhenomenon" Association="Self.FK_IdClimaticPhenomenon">
+            <End Role="tblClimaticPhenomenon" EntitySet="tblClimaticPhenomenon" />
+            <End Role="tblWeatherForecast" EntitySet="tblWeatherForecast" />
+          </AssociationSet>
+          <AssociationSet Name="FK_Id_Country" Association="Self.FK_Id_Country">
+            <End Role="tblCountry" EntitySet="tblCountry" />
+            <End Role="tblTerritory" EntitySet="tblTerritory" />
+          </AssociationSet>
+          <AssociationSet Name="FK_Id_Territory" Association="Self.FK_Id_Territory">
+            <End Role="tblTerritory" EntitySet="tblTerritory" />
+            <End Role="tblWeatherStation" EntitySet="tblWeatherStation" />
+          </AssociationSet>
+          <AssociationSet Name="FK_IdTypeTemperature" Association="Self.FK_IdTypeTemperature">
+            <End Role="tblTypeTemperature" EntitySet="tblTypeTemperature" />
+            <End Role="tblWeatherForecast" EntitySet="tblWeatherForecast" />
+          </AssociationSet>
+          <AssociationSet Name="FK_IdWeatherStation" Association="Self.FK_IdWeatherStation">
+            <End Role="tblWeatherStation" EntitySet="tblWeatherStation" />
+            <End Role="tblWeatherForecast" EntitySet="tblWeatherForecast" />
+          </AssociationSet>
+        </EntityContainer>
+      </Schema>
+    </edmx:ConceptualModels>
+    <!-- C-S mapping content -->
+    <edmx:Mappings>
+      <Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
+        <EntityContainerMapping StorageEntityContainer="climateModelStoreContainer" CdmEntityContainer="climateEntities">
+          <EntitySetMapping Name="tblAlert">
+            <EntityTypeMapping TypeName="climateModel.tblAlert">
+              <MappingFragment StoreEntitySet="tblAlert">
+                <ScalarProperty Name="ID" ColumnName="ID" />
+                <ScalarProperty Name="NameAlert" ColumnName="NameAlert" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="tblClimaticPhenomenon">
+            <EntityTypeMapping TypeName="climateModel.tblClimaticPhenomenon">
+              <MappingFragment StoreEntitySet="tblClimaticPhenomenon">
+                <ScalarProperty Name="ID" ColumnName="ID" />
+                <ScalarProperty Name="DescriptionClimaticPhenomenon" ColumnName="DescriptionClimaticPhenomenon" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="tblCountry">
+            <EntityTypeMapping TypeName="climateModel.tblCountry">
+              <MappingFragment StoreEntitySet="tblCountry">
+                <ScalarProperty Name="ID" ColumnName="ID" />
+                <ScalarProperty Name="NameCountry" ColumnName="NameCountry" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="tblTerritory">
+            <EntityTypeMapping TypeName="climateModel.tblTerritory">
+              <MappingFragment StoreEntitySet="tblTerritory">
+                <ScalarProperty Name="ID" ColumnName="ID" />
+                <ScalarProperty Name="NameTerritory" ColumnName="NameTerritory" />
+                <ScalarProperty Name="Id_Country" ColumnName="Id_Country" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="tblTypeTemperature">
+            <EntityTypeMapping TypeName="climateModel.tblTypeTemperature">
+              <MappingFragment StoreEntitySet="tblTypeTemperature">
+                <ScalarProperty Name="ID" ColumnName="ID" />
+                <ScalarProperty Name="NameTypeTemp" ColumnName="NameTypeTemp" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="tblUsers">
+            <EntityTypeMapping TypeName="climateModel.tblUsers">
+              <MappingFragment StoreEntitySet="tblUsers">
+                <ScalarProperty Name="ID" ColumnName="ID" />
+                <ScalarProperty Name="userName" ColumnName="userName" />
+                <ScalarProperty Name="userPassword" ColumnName="userPassword" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="tblWeatherForecast">
+            <EntityTypeMapping TypeName="climateModel.tblWeatherForecast">
+              <MappingFragment StoreEntitySet="tblWeatherForecast">
+                <ScalarProperty Name="StateRegister" ColumnName="StateRegister" />
+                <ScalarProperty Name="ID" ColumnName="ID" />
+                <ScalarProperty Name="ClimaticDescription" ColumnName="ClimaticDescription" />
+                <ScalarProperty Name="DateRegister" ColumnName="DateRegister" />
+                <ScalarProperty Name="Temperature" ColumnName="Temperature" />
+                <ScalarProperty Name="IdTypeTemperature" ColumnName="IdTypeTemperature" />
+                <ScalarProperty Name="IdClimaticPhenomenon" ColumnName="IdClimaticPhenomenon" />
+                <ScalarProperty Name="IdAlert" ColumnName="IdAlert" />
+                <ScalarProperty Name="IdWeatherStation" ColumnName="IdWeatherStation" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="tblWeatherStation">
+            <EntityTypeMapping TypeName="climateModel.tblWeatherStation">
+              <MappingFragment StoreEntitySet="tblWeatherStation">
+                <ScalarProperty Name="ID" ColumnName="ID" />
+                <ScalarProperty Name="NumStation" ColumnName="NumStation" />
+                <ScalarProperty Name="NameStation" ColumnName="NameStation" />
+                <ScalarProperty Name="Id_Territory" ColumnName="Id_Territory" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+        </EntityContainerMapping>
+      </Mapping>
+    </edmx:Mappings>
+  </edmx:Runtime>
+  <!-- EF Designer content (DO NOT EDIT MANUALLY BELOW HERE) -->
+  <Designer xmlns="http://schemas.microsoft.com/ado/2009/11/edmx">
+    <Connection>
+      <DesignerInfoPropertySet>
+        <DesignerProperty Name="MetadataArtifactProcessing" Value="EmbedInOutputAssembly" />
+      </DesignerInfoPropertySet>
+    </Connection>
+    <Options>
+      <DesignerInfoPropertySet>
+        <DesignerProperty Name="ValidateOnBuild" Value="true" />
+        <DesignerProperty Name="EnablePluralization" Value="false" />
+        <DesignerProperty Name="IncludeForeignKeysInModel" Value="true" />
+        <DesignerProperty Name="UseLegacyProvider" Value="false" />
+        <DesignerProperty Name="CodeGenerationStrategy" Value="Ninguno" />
+      </DesignerInfoPropertySet>
+    </Options>
+    <!-- Diagram content (shape and connector positions) -->
+    <Diagrams></Diagrams>
+  </Designer>
+</edmx:Edmx>
